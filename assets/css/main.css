@@ -18,7 +18,7 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
-
+/* BORRADO 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -34,7 +34,7 @@
 	blockquote, q {
 		quotes: none;
 	}
-
+*/
 	blockquote:before, blockquote:after, q:before, q:after {
 		content: '';
 		content: none;
@@ -55,8 +55,8 @@
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
-	}
-
+	}	
+		
 /* Containers */
 
 	.container {
