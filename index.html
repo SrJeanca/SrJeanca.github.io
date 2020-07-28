@@ -59,8 +59,36 @@
 								<dt>Estado civil:</dt>
 									<dd>Casado</dd>
 								<dt>Edad:</dt>
-									<dd>32 años</dd>
+									<dd id="myage"></dd>
 							</dl>				
+								
+							<script type="text/javascript">
+							today = new Date()
+							var year = today.getFullYear();
+							var month = today.getMonth();
+							var dayM = today.getDate();
+							todaymonth = month+1;
+							function old()
+							{
+								if(todaymonth >= 9)
+								{
+									if(dayM >= 19)
+									{
+										todayear = year-1987 + " años";
+									}
+								}
+								else
+								{
+									todayear = (year-1987)-1 + " años";
+								}
+							}
+							window.onload = function() 
+							{
+								old();
+								text = document.getElementById("myage");
+								text.innerHTML = todayear;
+							}
+							</script>
 								
 							<hr />
 							<h3 id="elements">OJETIVOS</h3>
@@ -106,39 +134,35 @@
 							
 						</div>
 						<div class="9u$ 12u$(medium)"><!-- div class="6u 12u$(medium)"-->
-
-							<!-- Buttons -->
-								<h3>Buttons</h3>
 								
-								<ul class="actions">									
-									<li><a href="#" class="button icon fa-download">Icon</a></li>
-								</ul>
-								
-								<h3>Projectos de ejemplo</h3>
+								<h3>PROJECTOS DE EJEMPLO:</h3>
 
 							<!-- Box -->
-								<h3>Nombre Projecto</h3>
+								<h2>Nombre Projecto</h2>
 								<div class="box">
-									<p>Este projecto es sobre esto</p>
-								</div>
-								<dl>
-									<dt>Imágenes del projecto:</dt>
+									<dl>
+									<dt>Projecto realizado para dispositivos móviles Android, código usado: Java, XML</dt>
 									<dd>
 										<!-- Image -->
-										<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
+										<div class="12u">
+										</p><span class="image fit  left"><img src="images/project1a.jpeg" alt="" /></span>Este projecto es sobre...</p>
+										</div>
 										<div class="box alt">
 											<div class="row 50% uniform">
-												<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-												<div class="4u$"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-												<!-- Break -->
-												<div class="4u"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-												<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-												<div class="4u$"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="3u"><span class="image fit"><img src="images/project1b.jpeg" alt="" /></span></div>
+												<div class="3u"><span class="image fit"><img src="images/project1c.jpeg" alt="" /></span></div>
+												<div class="3u$"><span class="image fit"><img src="images/project1d.jpeg" alt="" /></span></div>
+												<div class="3u$"><span class="image fit"><img src="images/project1a.jpeg" alt="" /></span></div>
 											</div>
 										</div>
 									</dd>
+									<hr />
+									<ul class="actions">									
+									<li><a href="#" class="button icon fa-download">descargar .apk</a></li>
+									</ul>
 								</dl>
+								</div>
+								
 
 						</div>
 					</div>
@@ -210,6 +234,5 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
